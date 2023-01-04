@@ -1,22 +1,22 @@
 local Translations = {
     error = {
-		var = 'text goes here',
+        var = 'text goes here',
     },
     success = {
-		var = 'text goes here',
+        var = 'text goes here',
     },
     primary = {
-		pvp_on = 'PVP : ON',
-		pvp_off = 'PVP : OFF',
+        pvp_on = 'PVP : ON',
+        pvp_off = 'PVP : OFF',
     },
     menu = {
-		var = 'text goes here',
+        var = 'text goes here',
     },
     commands = {
-		toggle_pvp = 'Toggle PVP on/off',
+        toggle_pvp = 'Toggle PVP on/off',
     },
     progressbar = {
-		var = 'text goes here',
+        var = 'text goes here',
     },
 }
 
