@@ -24,3 +24,15 @@ RegisterNetEvent('rsg-pvp:client:pvpToggle',function()
 
     RSGCore.Functions.Notify(Lang:t('primary.pvp_on'), 'primary')
 end)
+
+CreateThread(function()
+    while true do
+        DisableControlAction(0, 0x1F6D95E5, true) -- Disable F4 HUD menu
+
+        if Citizen.InvokeNative(0x91AEF906BCA88877, 0, 0x1F6D95E5) then
+            TriggerEvent('rsg-pvp:client:pvpToggle')
+        end
+
+        Wait(5)
+    end
+end)
