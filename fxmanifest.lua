@@ -4,7 +4,7 @@ game 'rdr3'
 
 author 'RexShack#3041'
 description 'rsg-pvp'
-version '1.0.0'
+version '1.0.1'
 
 client_scripts {
     'client/client.lua'
@@ -18,8 +18,12 @@ shared_scripts {
     '@rsg-core/shared/locale.lua',
     'locales/en.lua', -- Change this to your preferred language
     'config.lua',
+    '@ox_lib/init.lua'
 }
 
-dependency 'rsg-core'
+dependencies {
+    'ox_lib',
+    'rsg-core'
+}
 
 lua54 'yes'

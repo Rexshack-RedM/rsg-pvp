@@ -12,7 +12,10 @@ RegisterNetEvent('rsg-pvp:client:pvpToggle',function()
 
         pvp = false
 
-        RSGCore.Functions.Notify(Lang:t('primary.pvp_off'), 'primary')
+        
+        lib.notify({ title = Lang:t('primary.pvp_off'), duration = 5000, type = 'warning' })
+        
+        
         return
     end
 
@@ -22,7 +25,8 @@ RegisterNetEvent('rsg-pvp:client:pvpToggle',function()
 
     pvp = true
 
-    RSGCore.Functions.Notify(Lang:t('primary.pvp_on'), 'primary')
+    
+    lib.notify({ title = Lang:t('primary.pvp_on'), duration = 5000, type = 'success' })
 end)
 
 CreateThread(function()

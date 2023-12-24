@@ -25,6 +25,6 @@ Lang = Locale:new({
     warnOnMissing = true
 })
 
--- Lang:t('primary.pvp_on')
--- Lang:t('primary.pvp_off')
+ Lang:t('primary.pvp_on')
+ Lang:t('primary.pvp_off')
 -- Lang:t('commands.toggle_pvp')
